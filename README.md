@@ -8,8 +8,10 @@ git clone https://github.com/BiCro-HT/broad.git
 
 ## Install
 
+change <project_name> with your desired name.
+
 ```shell
-bash install.sh
+bash install.sh <project_name>
 ```
 
 ## Sample Run: sbatch JOB
