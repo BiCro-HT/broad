@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ------------------------ open an interactive session -----------------------
-srun --nodes=1 --mem-per-cpu=32GB --partition=cpu-interactive  --pty /bin/bash
+
 # -------------------- Check if the project name is provided --------------------
 if [ $# -eq 0 ]; then
     echo "Usage: $0 <project_name>"
