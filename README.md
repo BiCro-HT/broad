@@ -3,7 +3,7 @@
 ## Clone this repository
 
 ```shell
-git clone ...
+git clone https://github.com/BiCro-HT/broad.git
 ```
 
 ## Install
