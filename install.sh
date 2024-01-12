@@ -29,7 +29,6 @@ if [ -d "$BWA_DIR" ]; then
 else
     # Clone the BWA repository
     git clone https://github.com/lh3/bwa.git "$BWA_DIR"
-    git clone https://github.com/lh3/bwa.git ~/bwa
     cd ~/bwa
     make
     echo 'export PATH=$PATH:~/bwa' >> ~/.bashrc

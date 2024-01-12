@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# ------------------------ open an interactive session -----------------------
-
 # -------------------- Check if the project name is provided --------------------
 if [ $# -eq 0 ]; then
     echo "Usage: $0 <project_name>"
