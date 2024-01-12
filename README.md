@@ -37,7 +37,7 @@ sbatch run_sample.sh
 ```shell
 git clone https://github.com/BiCro-HT/broad.git
 cd broad
-bash install.sh <project_name>
+bash install.sh test123
 srun --nodes=1 --mem-per-cpu=32GB --partition=cpu-interactive  --pty /bin/bash
-source run_int.sh <project_name>
+source run_int.sh test123
 ```
