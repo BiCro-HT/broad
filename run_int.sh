@@ -8,7 +8,6 @@ fi
 PROJECT_NAME="$1"
 cd "$PROJECT_NAME"
 # ------------------------ Main part -----------------------
-poetry shell
 python CRISPR-broad/crisprbroad.py genomesplit -d ./output -f CRISPR-broad/Inputgenome.fa -t 40 -l 23 -g 50 -p GG
 python CRISPR-broad/crisprbroad.py createindex -f CRISPR-broad/Inputgenome.fa
 python CRISPR-broad/crisprbroad.py maptogenome -d ./output -f CRISPR-broad/Inputgenome.fa -t 40 -nm 5 -nx 10000 -m 2 -g 50 -l 230
