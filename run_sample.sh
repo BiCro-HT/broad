@@ -8,7 +8,6 @@
 #SBATCH --output=job_name_%j.log
 #SBATCH --mem-per-cpu=1024M
 
-#srun --time=4:00:00 --mem=100G --nodes=1 -c 40 --pty bash -l
 poetry shell
 python crisprbroad.py genomesplit -d ../output -f Inputgenome.fa -t 40 -l 23 -g 50 -p GG
 python crisprbroad.py createindex -f Inputgenome.fa
