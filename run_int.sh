@@ -12,4 +12,4 @@ python CRISPR-broad/crisprbroad.py genomesplit -d ./output -f CRISPR-broad/Input
 python CRISPR-broad/crisprbroad.py createindex -f CRISPR-broad/Inputgenome.fa
 python CRISPR-broad/crisprbroad.py maptogenome -d ./output -f CRISPR-broad/Inputgenome.fa -t 40 -nm 5 -nx 10000 -m 2 -g 50 -l 230
 python CRISPR-broad/crisprbroad.py filterhits -d ./output -t 40 -nm 5 -nx 10000
-python CRISPR-broad/crisprbroad.py findwindow -d ./output -t 40 -p GG -w 10000 -l 23 -nm 5 -nw 5
+python CRISPR-broad/crisprbroad.py findwindow -d ./output -t 40 -p GG -w 10000 -l 23 -nm 5 -nw 5 2> ./output/CRISPRs.log # suppress warnings

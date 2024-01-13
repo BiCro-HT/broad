@@ -17,10 +17,10 @@ poetry new "$PROJECT_NAME"
 cd "$PROJECT_NAME"
 mkdir output
 poetry add biopython==1.78
-poetry add pandas==1.5.3
-poetry add pyranges==0.0.95
+poetry add pandas==1.5.3 # same thing but this one installs
+poetry add pyranges==0.0.129 # prevents numpy bool errors
 poetry install
-git clone https://github.com/AlagurajVeluchamy/CRISPR-broad.git
+git clone https://github.com/Zaf4/CRISPR-broad.git # for now..
 # ------------------------ Install bwa -----------------------
 BWA_DIR="$HOME/bwa"
 # Check if the directory already exists
