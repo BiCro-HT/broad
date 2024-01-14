@@ -7,6 +7,19 @@ if [ $# -eq 0 ]; then
 fi
 PROJECT_NAME="$1"
 cd "$PROJECT_NAME"
+
+CB_DIR="$HOME/CRISPR-broad"
+CB="$CB_DIR/crisprbroad.py"
+
+# ------------------------ Check if the reference genome is provided -----------------------
+if [ $# -eq 2 ]; then
+    REF_GENOME="$HOME/$2"
+    echo "Using $REF_GENOME as the reference genome"
+else
+    REF_GENOME="$CB_DIR/Inputgenome.fa"
+    echo "no reference genome provided... Using $REF_GENOME as the reference genome"
+fi
+
 # ------------------------ Main part -----------------------
 CB_DIR="$HOME/CRISPR-broad"
 CB="$CB_DIR/crisprbroad.py"
