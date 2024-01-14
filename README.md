@@ -32,8 +32,8 @@ by default an example fasta file inside CRISPR-broad is used as reference genome
 If you want to use a reference genome, you can download hg38 (human genome) or mm10 (mus musculus) using;
 
 ```shell
-bash download_ref_genome hg38 # human genome
-bash download_ref_genome mm10 # mus musculus genome
+bash download_ref_genome.sh hg38 # human genome
+bash download_ref_genome.sh mm10 # mus musculus genome
 ```
 
 > [!NOTE]
