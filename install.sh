@@ -21,10 +21,7 @@ poetry add biopython==1.78
 poetry add pandas==1.5.3 # same thing but this one installs
 poetry add pyranges==0.0.129 # prevents numpy bool errors
 poetry install
-# remove unnecessary folders and files
-rm -rf tests 
-rm -rf "$PROJECT_NAME"
-rm README.md
+
 # ---------------------- Install CRISPR-broad to HOME ---------------------
 git clone https://github.com/Zaf4/CRISPR-broad.git $HOME # for now from Zaf4's fork..
 # ------------------------ Install bwa -----------------------
