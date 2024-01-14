@@ -24,7 +24,7 @@ poetry install
 rm -rf tests 
 rm -rf "$PROJECT_NAME"
 rm README.md
-git clone https://github.com/Zaf4/CRISPR-broad.git # for now..
+git clone https://github.com/Zaf4/CRISPR-broad.git $HOME # for now..
 # ------------------------ Install bwa -----------------------
 BWA_DIR="$HOME/bwa"
 # Check if the directory already exists

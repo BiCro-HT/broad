@@ -43,9 +43,9 @@ cd /scratch/$(basename $HOME)
 git clone https://github.com/BiCro-HT/broad.git
 cd broad
 bash install.sh test123
-cd test123
+
 srun --nodes=1 --mem-per-cpu=32GB --partition=cpu-interactive  --pty /bin/bash
-poetry shell
-cd ..
+cd test123;poetry shell;cd ..
+
 source run_int.sh test123
 ```
