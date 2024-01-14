@@ -24,7 +24,7 @@ CB="$CB_DIR/crisprbroad.py"
 
 # ------------------------ Check if the reference genome is provided -----------------------
 if [ $# -eq 2 ]; then
-    REF_GENOME="$HOME/$2"
+    REF_GENOME="$HOME/ref/$2/fa"
     echo "Using $REF_GENOME as the reference genome"
 else
     REF_GENOME="$CB_DIR/Inputgenome.fa"
