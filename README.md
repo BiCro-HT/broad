@@ -13,7 +13,7 @@ cd /scratch/$(basename $HOME)
 2. clone **broad**
 
 ```shell
-git clone https://github.com/BiCro-HT/broad.git /scratch/$(basename $HOME)
+git clone https://github.com/BiCro-HT/broad.git
 ```
 
 3. create a project inside **broad**
