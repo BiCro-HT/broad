@@ -4,7 +4,7 @@ install and use [CRISPR-broad](https://github.com/AlagurajVeluchamy/CRISPR-broad
 
 ## Installation
 
-1. make sure your to set your working directory as your scratch directory
+1. set your working directory as your scratch directory
 
 ```shell
 cd /scratch/$(basename $HOME)
