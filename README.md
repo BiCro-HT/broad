@@ -4,11 +4,21 @@ install and use [CRISPR-broad](https://github.com/AlagurajVeluchamy/CRISPR-broad
 
 ## Installation
 
+1. make sure your to set your working directory as your scratch directory
+
 ```shell
-# clone broad
 cd /scratch/$(basename $HOME)
-git clone https://github.com/BiCro-HT/broad.git
-# run installation
+```
+
+2. clone **broad**
+
+```shell
+git clone https://github.com/BiCro-HT/broad.git /scratch/$(basename $HOME)
+```
+
+3. create a project inside **broad**
+
+```shell
 cd broad
 bash install.sh <project_name>
 ```

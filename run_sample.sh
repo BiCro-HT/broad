@@ -11,6 +11,8 @@
 # -------------------- Check if the project name is provided --------------------
 if [ $# -eq 0 ]; then
     echo "Usage: $0 <project_name>"
+    echo "also you can provide a reference genome..."
+    echo "Usage: $0 <project_name> <reference_genome>"
     exit 1
 fi
 PROJECT_NAME="$1"
