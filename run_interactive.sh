@@ -1,12 +1,4 @@
-#!/bin/bash 
-#SBATCH --job-name=crispr_broad
-#SBATCH --mail-type=ALL
-#SBATCH --partition=cpuq
-#SBATCH --time=47:59:59
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=32
-#SBATCH --output=job_name_%j.log
-#SBATCH --mem-per-cpu=1024M
+#!/bin/bash
 
 # -------------------- Check if the project name is provided --------------------
 if [ $# -eq 0 ]; then
