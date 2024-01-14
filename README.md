@@ -23,19 +23,23 @@ cd broad
 bash install.sh <project_name>
 ```
 
-Important: Make sure to change <project_name> with the desired name here and for the rest of instructions
+> [!IMPORTANT]
+> Make sure to change <project_name> with the desired name here and for the rest of instructions.
 
 ## Downloading a reference genome
 
 by default an example fasta file inside CRISPR-broad is used as reference genome.
 If you want to use a reference genome, you can download hg38 (human genome) or mm10 (mus musculus) using;
 
+> [!NOTE]
+> You only need to download a ref genome once.
+
 ```shell
 bash download_ref_genome hg38 # human genome
 bash download_ref_genome mm10 # mus musculus genome
 ```
 
-*You only need to download a ref genome once..*
+
 
 ## Usage
 
