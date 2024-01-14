@@ -46,7 +46,7 @@ sbatch run_sample.sh <project_name> <reference_genome>
 ```
 
 by default an example fasta file inside CRISPR-broad is used as reference genome.
-If you want to use a reference genome, you can download hg38 (human genome) or mm10 (mus musculus) using.
+If you want to use a reference genome, you can download hg38 (human genome) or mm10 (mus musculus) using;
 
 ```shell
 bash download_ref_genome hg38 # human genome
@@ -70,14 +70,4 @@ bash run_interactive.sh <project_name>
 
 ## TEST RUN from zero with small example genome
 
-```shell
-# clone broad
-cd /scratch/$(basename $HOME)
-git clone https://github.com/BiCro-HT/broad.git
-# run installation
-cd broad
-bash install.sh test123
-# do the test run 
-srun --nodes=1 --mem-per-cpu=32GB --partition=cpu-interactive  --pty /bin/bash # in interactive session...
-bash run_interactive.sh test123 # run interactively.
-```
+For a test run check [TESTRUN.md](testrun.md)
