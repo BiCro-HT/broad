@@ -23,7 +23,7 @@ poetry add pyranges==0.0.129 # prevents numpy bool errors
 poetry install
 
 # ---------------------- Install CRISPR-broad to HOME ---------------------
-git clone https://github.com/Zaf4/CRISPR-broad.git $HOME # for now from Zaf4's fork..
+git clone https://github.com/Zaf4/CRISPR-broad.git $HOME/CRISPR-broad # for now from Zaf4's fork..
 # ------------------------ Install bwa -----------------------
 BWA_DIR="$HOME/bwa"
 # Check if the directory already exists
