@@ -7,9 +7,10 @@ install and use [CRISPR-broad](https://github.com/AlagurajVeluchamy/CRISPR-broad
 1. set your working directory as your scratch directory
 
 ```shell
-cd /scratch/$(whoami)
+cd /scratch/$USER
 ```
-*$(whoami) adds your user name...*
+
+*$USER adds your user name..*
 
 2. clone **broad**
 
@@ -48,10 +49,10 @@ bash download_ref_genome.sh mm10 # mus musculus genome
 make sure to go to **installation directory**, use the following;
 
 ```shell
-cd /scratch/$(whoami)/broad/
+cd /scratch/$USER/broad/
 ```
 
-**After Going to installation directory**
+
 
 you may use  **Job** or **Interactive** run.
 For **real work** definetely use the [JOB](#job)
@@ -77,7 +78,7 @@ Just as an option but **highly discouraged**
 
 ```shell
 srun --nodes=1 --cpus-per-task=4 --mem-per-cpu=4GB --partition=cpu-interactive --pty /bin/bash
-bash run_interactive.sh <project_name> 
+bash run_interactive.sh <project_name> <reference_genome>
 ```
 
 ## TEST RUN from zero with small example genome
