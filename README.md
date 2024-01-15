@@ -29,22 +29,15 @@ bash install.sh <project_name>
 ## Downloading a reference genome
 
 by default an example fasta file inside CRISPR-broad is used as reference genome.
-If you want to use a reference genome, you can download hg38 (human genome) or mm10 (mus musculus) using;
+If you want to use a reference genome, you can download hg38 or T2T (human genomes) or mm10 (mus musculus) using;
 
 ```shell
 bash download_ref_genome.sh hg38 # human genome
+bash download_ref_genome.sh T2T # human genome telomere to telomere
 bash download_ref_genome.sh mm10 # mus musculus genome
 ```
 
 [For more info on reference genomes](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/)
-
-To use T2T (chm13v2.0) reference genome from HT-HPC
-
-```shell
-mkdir -p ~/ref/
-cp /processing_data/reference_datasets/T2T/2.0/chm13v2.0.fa.gz ~/ref/
-gunzip --keep ~/ref/chm13v2.0.fa.gz
-```
 
 > [!NOTE]
 > You only need to download a ref genome once.
@@ -74,7 +67,7 @@ make sure you downloaded the [reference genome](#downloading-a-reference-genome)
 after the download..
 
 ```shell
-sbatch run_sample.sh <project_name> hg38 # or mm10
+sbatch run_sample.sh <project_name> hg38 # or T2T or mm10
 ```
 
 ### Interactive
