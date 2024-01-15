@@ -38,6 +38,14 @@ bash download_ref_genome.sh mm10 # mus musculus genome
 
 [For more info on reference genomes](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/)
 
+To use T2T (chm13v2.0) reference genome from HT-HPC
+
+```shell
+mkdir -p ~/ref/
+cp /processing_data/reference_datasets/T2T/2.0/chm13v2.0.fa.gz ~/ref/
+gunzip --keep ~/ref/chm13v2.0.fa.gz
+```
+
 > [!NOTE]
 > You only need to download a ref genome once.
 
