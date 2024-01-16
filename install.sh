@@ -4,10 +4,10 @@ MAIN_DIR=$(pwd)
 # Using without square brackets
 if ! grep -qxF 'export PATH=$PATH:~/.local/bin' ~/.bashrc; then
     echo 'export PATH=$PATH:~/.local/bin' >> ~/.bashrc
-    echo "exporting to.. PATH ~/.local/bin"
+    echo "writing to bashrc.. PATH ~/.local/bin"
     source ~/.bashrc
 else
-    echo "Line already present in ~/.bashrc"
+    echo "~/.local/bin is already in ~/.bashrc"
 fi
 
 # ------------------- Check if the project name is provided	-------------------

@@ -26,6 +26,7 @@ elif [ "$reference_genome" == "T2T" ]; then
     echo "Copying T2T reference genome"
     cp /processing_data/reference_datasets/T2T/2.0/chm13v2.0.fa.gz ~/ref/
     gunzip --keep ~/ref/chm13v2.0.fa.gz
+    mv ~/ref/chm13v2.0.fa ~/ref/T2T.fa
 else
     echo "Unknown reference genome: $reference_genome"
     exit 1
