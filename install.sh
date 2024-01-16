@@ -12,6 +12,7 @@ module load python/3.11.5
 module load python-3.11.5/py-pip/23.0
 # ------------------------ Main part -----------------------
 # Install poetry, create a new project, and install the dependencies
+export PATH=$PATH:~/.local/bin
 pip install poetry
 poetry config virtualenvs.in-project false
 poetry new "$PROJECT_NAME"
@@ -35,5 +36,6 @@ else
     cd ~/bwa
     make
     echo 'export PATH=$PATH:~/bwa' >> ~/.bashrc
+    source ~/.bashrc
 fi
 cd "$MAIN_DIR"
