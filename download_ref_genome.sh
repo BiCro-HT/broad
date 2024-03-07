@@ -24,9 +24,9 @@ elif [ "$reference_genome" == "hg38" ]; then
     echo "Done!"
 elif [ "$reference_genome" == "T2T" ]; then
     echo "Copying T2T reference genome"
-    cp /processing_data/reference_datasets/T2T/2.0/chm13v2.0.fa.gz ~/ref/
-    gunzip --keep ~/ref/chm13v2.0.fa.gz
-    mv ~/ref/chm13v2.0.fa ~/ref/T2T.fa
+    wget -P ~/ref/ https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/009/914/755/GCF_009914755.1_T2T-CHM13v2.0/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna.gz
+    gunzip -k ~/ref/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna.gz
+    mv ~/ref/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna ~/ref/T2T.fa
 else
     echo "Unknown reference genome: $reference_genome"
     exit 1
